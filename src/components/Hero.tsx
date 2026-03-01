@@ -5,13 +5,12 @@ import CountUp from "react-countup";
 import { InView } from "react-intersection-observer";
 
 const stats = [
-  { label: "Projects Delivered", value: 250, suffix: "+" },
-  { label: "Client Satisfaction", value: 98, suffix: "%" },
-  { label: "Team Experts", value: 50, suffix: "+" },
-  { label: "Years Experience", value: 12, suffix: "+" },
+  { label: "Projects Success", value: 300, suffix: "+" },
+  { label: "Client Satisfaction", value: 99, suffix: "%" },
+  { label: "Global Clients Leased", value: 75, suffix: "+" },
+  { label: "Industry Experts", value: 15, suffix: "+" },
 ];
 
-const logos = ["STRIPE", "NOTION", "VERCEL", "FIGMA", "SLACK"];
 
 const Hero = () => {
   return (
@@ -51,32 +50,40 @@ const Hero = () => {
               Explore Services
             </a>
           </div>
+        </div>
 
-          {/* Logos */}
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-30 grayscale mb-24">
-            {logos.map((logo) => (
-              <span key={logo} className="text-[10px] font-bold tracking-[0.3em] text-white">
-                {logo}
-              </span>
-            ))}
+        {/* Stats Section with Headline */}
+        <div className="w-full max-w-7xl mx-auto px-6 mt-16">
+          <div className="flex flex-col items-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
+              Why Choose Our <span className="text-[#00EAFF]">IT Solutions Company</span>
+            </h2>
           </div>
 
-          {/* Stats Bar */}
           <InView triggerOnce threshold={0.1}>
             {({ inView, ref }) => (
-              <div ref={ref} className="w-full grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/5 pt-20">
-                {stats.map((s) => (
-                  <div key={s.label} className="flex flex-col items-center border-l first:border-l-0 border-white/5">
-                    <p className="text-4xl md:text-5xl font-bold text-white mb-2">
-                      {inView ? (
-                        <CountUp start={0} end={s.value} duration={2.5} separator="," suffix={s.suffix} />
-                      ) : (
-                        `0${s.suffix}`
+              <div ref={ref} className="w-full flex flex-wrap items-center justify-center gap-y-8 pt-10 border-t border-white/5">
+                <div className="flex items-center flex-wrap justify-center font-bold">
+                  {stats.map((s, idx) => (
+                    <div key={s.label} className="flex items-center">
+                      <div className="flex items-center gap-3 px-6 md:px-8">
+                        <span className="text-3xl md:text-4xl font-bold text-white tracking-tighter">
+                          {inView ? (
+                            <CountUp start={0} end={s.value} duration={2.5} separator="," suffix={s.suffix} />
+                          ) : (
+                            `0${s.suffix}`
+                          )}
+                        </span>
+                        <span className="text-[9px] text-white/50 font-bold text-left leading-[1.2] uppercase tracking-widest max-w-[80px]">
+                          {s.label}
+                        </span>
+                      </div>
+                      {idx < stats.length - 1 && (
+                        <div className="h-6 w-[1px] bg-white/10" />
                       )}
-                    </p>
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-[#00EAFF] font-bold">{s.label}</p>
-                  </div>
-                ))}
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </InView>

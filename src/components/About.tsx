@@ -24,12 +24,13 @@ const values = [
 ];
 
 const team = [
-  { image: "/team/box.png", initials: "AC", name: "BOX", role: "CEO & Co-founder", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
-  { image: "team/boy.png", initials: "dfdf", name: "boy", role: "CTO & Co-founder", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
-  { image: "team/budget.png", initials: "DK", name: "David Kim", role: "VP of Engineering", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "https://i.pravatar.cc/150?u=sarah", initials: "SM", name: "Sarah Martinez", role: "Head of AI/ML", desc: "PhD from MIT. Published researcher in computer vision and NLP." },
-  { image: "https://i.pravatar.cc/150?u=james", initials: "JW", name: "James Wright", role: "Head of Security", desc: "Former NSA cybersecurity specialist. CISSP and OSCP certified." },
-  { image: "https://i.pravatar.cc/150?u=priya", initials: "PS", name: "Priya Sharma", role: "VP of Design", desc: "Award-winning product designer. Previously led design at Figma." },
+  { image: "/team/Bangi1.jpeg", initials: "AC", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
+  { image: "team/Chinmoy.png", initials: "dfdf", name: "Chinmoy Kumar Das", role: "COO", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
+  { image: "team/Dipa.png", initials: "DK", name: " Ruhia Rahman", role: "Head of Marketing & Seals", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "team/Rakib.jpeg", initials: "DK", name: " Rakib Bhuiyan", role: "Developer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "team/aa.mp4", initials: "DK", name: " Ajfar Uddin Ahmed Chowdhury", role: "CTO", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "team/Nohan.jpeg", initials: "DK", name: " Rizouan Ur Rashid", role: "Head of Marketing & Seals", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+
 ];
 
 const milestones = [
