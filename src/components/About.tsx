@@ -38,13 +38,7 @@ const team = [
     bio: "Expert in cloud infrastructure & business operations.",
     linkedin: "#",
   },
-  {
-    name: "Ruhia Rahman",
-    role: "Head of Marketing",
-    image: "/team/Dipa.png",
-    bio: "Experienced in global tech marketing and strategy.",
-    linkedin: "#",
-  },
+
   {
     name: "Fahima Chowdhury",
     role: "Development Lead",
@@ -67,6 +61,15 @@ const team = [
     bio: "Designer focused on intuitive, human-centered interfaces.",
     linkedin: "#",
   },
+
+  {
+    name: "Ruhia Rahman",
+    role: "Head of Marketing",
+    image: "/team/Dipa.png",
+    bio: "Experienced in global tech marketing and strategy.",
+    linkedin: "#",
+  },
+
   {
     name: "Rizouan Ur Rashid",
     role: "Cyber Security Engineer",
