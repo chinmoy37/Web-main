@@ -45,7 +45,7 @@ const Navbar = () => {
             href="/contact"
             className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold glow-button"
           >
-            Book a Call
+            Book Your Consultation
           </Link>
         </div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             onClick={() => setOpen(false)}
             className="block bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold text-center glow-button"
           >
-            Book a Call
+            Book Your Consultation
           </Link>
         </div>
       )}

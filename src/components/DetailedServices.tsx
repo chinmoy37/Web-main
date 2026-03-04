@@ -2,43 +2,36 @@ import { Cloud, Code, Shield, Cpu, Database, Globe, ChevronRight } from "lucide-
 
 const mainServices = [
     {
-        icon: Cloud,
-        title: "Cloud Architecture & Migration",
-        desc: "We design and implement enterprise-grade cloud infrastructure on AWS, Azure, and GCP. Our architects ensure your systems are resilient, cost-optimized, and future-proof.",
-        features: ["Multi-cloud strategy", "Auto-scaling infrastructure", "Cost optimization", "24/7 monitoring"],
-    },
-    {
         icon: Code,
-        title: "Custom Software Development",
-        desc: "Full-stack applications built with cutting-edge frameworks. From MVPs to enterprise platforms, we deliver pixel-perfect, performant software.",
-        features: ["React & Next.js", "Node.js & Python", "Mobile-first design", "CI/CD pipelines"],
-        reverse: true,
-    },
-    {
-        icon: Shield,
-        title: "Cybersecurity & Compliance",
-        desc: "Comprehensive security audits, penetration testing, and zero-trust architecture. We protect your business from evolving threats while ensuring regulatory compliance.",
-        features: ["Penetration testing", "SOC 2 compliance", "Zero-trust architecture", "Incident response"],
+        title: "Web & Mobile Development",
+        desc: "Build responsive, scalable applications with React, Next.js, and Node.js. We focus on performance and seamless user experiences.",
+        features: ["React & Next.js Expert", "Node.js Backend", "Mobile-first Design", "40% faster checkout (Example)"],
     },
     {
         icon: Cpu,
         title: "AI & Machine Learning",
-        desc: "Transform raw data into intelligent automation. We build custom ML models, NLP systems, and computer vision solutions that drive real business outcomes.",
-        features: ["Custom ML models", "NLP & chatbots", "Predictive analytics", "Computer vision"],
+        desc: "Predictive analytics, recommendation engines, and process automation tailored to your unique business workflows.",
+        features: ["Custom ML Models", "Process Automation", "NLP & Chatbots", "37% loss reduction (Example)"],
+        reverse: true,
+    },
+    {
+        icon: Shield,
+        title: "Cybersecurity",
+        desc: "Protect your organization from data breaches and cyber attacks with our multi-layer security protocols.",
+        features: ["SOC 2 Compliance", "Zero-trust Architecture", "Penetration Testing", "Multi-layer security (Example)"],
+    },
+    {
+        icon: Cloud,
+        title: "Cloud & DevOps",
+        desc: "Migrate, scale, and maintain high-performance cloud infrastructure on AWS, Azure, and GCP.",
+        features: ["Multi-cloud Strategy", "CI/CD Pipelines", "Cost Optimization", "25% cost reduction (Example)"],
         reverse: true,
     },
     {
         icon: Database,
         title: "Data Engineering & Analytics",
-        desc: "Real-time data pipelines, warehousing, and visualization. We turn your data chaos into structured, actionable insights that power decision-making.",
-        features: ["ETL pipelines", "Data warehousing", "Real-time dashboards", "Business Intelligence"],
-    },
-    {
-        icon: Globe,
-        title: "Digital Transformation",
-        desc: "End-to-end modernization of legacy systems. We help organizations embrace digital-first strategies and build competitive advantages through technology.",
-        features: ["Legacy modernization", "Process automation", "API-first design", "Change management"],
-        reverse: true,
+        desc: "Collect, process, and visualize data for better decision-making through real-time KPI monitoring.",
+        features: ["ETL Pipelines", "Real-time Dashboards", "Integrations", "KPI Monitoring (Example)"],
     },
 ];
 
@@ -73,7 +66,7 @@ const processSteps = [
 const pricingPlans = [
     {
         name: "Custom MVP",
-        price: "$5,000",
+        price: "Custom",
         desc: "Perfect for startups looking to validate their core value proposition quickly.",
         features: ["Feature prioritization", "UI/UX Prototype", "Core Logic Implementation", "Cloud Setup"],
     },
@@ -107,8 +100,20 @@ const techStack = [
 const DetailedServices = () => {
     return (
         <div className="flex flex-col items-center bg-transparent">
+            {/* Header */}
+            <section className="w-full max-w-6xl mx-auto px-6 pt-32 pb-12 text-center">
+                <p className="text-[#00EAFF] text-xs font-semibold tracking-widest uppercase mb-4">OUR SERVICES</p>
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+                    Our Services – <br />
+                    <span className="text-[#00EAFF]">Tailored Solutions</span> for Every Business Challenge
+                </h1>
+                <p className="text-gray-200 font-light max-w-2xl mx-auto leading-relaxed text-lg">
+                    We deliver specialized technology solutions that empower businesses to innovate, scale, and lead their industries.
+                </p>
+            </section>
+
             {/* Featured Services */}
-            <section id="services" className="w-full max-w-6xl mx-auto px-6 py-24 space-y-12">
+            <section id="services-list" className="w-full max-w-6xl mx-auto px-6 py-24 space-y-12">
                 {mainServices.map((service) => (
                     <div
                         key={service.title}
@@ -223,6 +228,8 @@ const DetailedServices = () => {
                     ))}
                 </div>
             </section>
+
+
         </div>
     );
 };

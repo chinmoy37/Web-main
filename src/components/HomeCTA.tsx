@@ -7,7 +7,7 @@ const HomeCTA = () => {
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[#00EAFF] text-[10px] font-bold tracking-[0.2em] uppercase mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#00EAFF] animate-pulse" /> Ready to Scale?
+          <span className="w-1.5 h-1.5 rounded-full bg-[#00EAFF] animate-pulse" /> Ready to innovate?
         </div>
 
         <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white leading-[1.1]">
@@ -15,7 +15,7 @@ const HomeCTA = () => {
           With Confidence
         </h2>
         <p className="text-gray-400 font-semibold max-w-lg mx-auto mb-12 leading-relaxed text-sm">
-          Partner with a leading IT solutions company and unlock the full potential of digital innovation. Let’s build scalable, secure, and future-ready solutions tailored to your business goals.
+          Partner with RadianCore and unlock the full potential of digital innovation. Let’s build scalable, secure, and future-ready solutions tailored to your business goals.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
@@ -23,10 +23,10 @@ const HomeCTA = () => {
             href="/contact"
             className="inline-flex items-center justify-center bg-[#00EAFF] text-black px-10 py-4 rounded font-bold text-xs uppercase tracking-wider hover:bg-[#00EAFF]/90 transition-all duration-300 gap-2 group"
           >
-            Get Started Now <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            Book Your Free Consultation Today <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
           <a
-            href="mailto:hello@novatech.io"
+            href="mailto:hello@radiancore.com"
             className="inline-flex items-center justify-center gap-2 border border-white/10 text-white bg-white/5 px-10 py-4 rounded font-bold text-xs uppercase tracking-wider hover:bg-white/10 transition-all duration-300 group"
           >
             <Mail className="h-4 w-4" />

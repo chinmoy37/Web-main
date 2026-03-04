@@ -2,41 +2,85 @@ import { Terminal, Heart, Lightbulb, Globe } from "lucide-react";
 
 const values = [
   {
-    icon: Terminal,
-    title: "Precision Engineering",
-    desc: "Every line of code is purposeful. We implemented AI-based automation that reduced client infrastructure costs by 20% through efficient resource allocation.",
+    title: "Innovation",
+    desc: "Continuously improving technology for real results.",
+    achievement: "Custom AI frameworks developed for 10+ clients",
   },
   {
-    icon: Heart,
     title: "Client Obsession",
-    desc: "Your success is our mission. We maintain a 99% client satisfaction rate across 50+ delivered projects by treating your challenges as our own.",
+    desc: "Delivering solutions that exceed expectations.",
+    achievement: "99% client satisfaction rate across all projects",
   },
   {
-    icon: Lightbulb,
-    title: "Relentless Innovation",
-    desc: "We stay ahead of the curve, constantly exploring emerging technologies like LLMs and Edge Computing to deliver smarter, faster solutions.",
+    title: "Precision Engineering",
+    desc: "High-quality code and design as our baseline.",
+    achievement: "Zero critical security vulnerabilities in 50+ audits",
   },
   {
-    icon: Globe,
     title: "Global Perspective",
-    desc: "With team members specializing in diverse ecosystems, we bring unique perspectives to solve complex problems for international startups and enterprises.",
+    desc: "Experience in international markets and standards.",
+    achievement: "Projects delivered across 15+ countries",
   },
 ];
 
 const team = [
-  { image: "/team/aa.mp4", initials: "AC", name: "Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Specializes in high-performance distributed systems. Leading the technical vision and engineering excellence at RadianCore." },
-  { image: "/team/Chinmoy.png", initials: "CD", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Expert in enterprise-scale cloud operations. Ensuring seamless project delivery and operational efficiency for all global clients." },
-  { image: "/team/Dipa.png", initials: "RR", name: "Ruhia Rahman", role: "Head of Marketing & Sales", desc: "Strategist behind RadianCore's global outreach. Focused on building strong, long-term partnerships with tech-forward enterprises." },
-  { image: "/team/Mi.jpg", initials: "FC", name: "Fahima Chowdhury", role: "Development Lead", desc: "Full-stack architect with a focus on scalable React applications. Mentors our engineering teams to deliver pixel-perfect software." },
-  { image: "/team/Rakib.jpeg", initials: "RB", name: "Rakib Bhuiyan", role: "Data Engineer", desc: "Builds robust data pipelines and machine learning models. Turning complex data into actionable insights for our fintech partners." },
-  { image: "/team/Bangi1.jpeg", initials: "BS", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Dedicated to user-centric design. Creates intuitive interfaces that bridge the gap between complex technology and human interaction." },
-  { image: "/team/Nohan.jpeg", initials: "RR", name: "Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Guardian of our clients' digital assets. Implements zero-trust architectures and rigorous security compliance protocols." },
+  {
+    name: "Ajfar Uddin Ahmed Chowdhury",
+    role: "Chief Technology Officer",
+    image: "/team/aa.mp4",
+    bio: "10+ years in AI & cloud solutions. Former engineer at Uber.",
+    linkedin: "#",
+  },
+  {
+    name: "Chinmoy Kumar Das",
+    role: "Chief Operating Officer",
+    image: "/team/Chinmoy.png",
+    bio: "Expert in cloud infrastructure & business operations.",
+    linkedin: "#",
+  },
+  {
+    name: "Ruhia Rahman",
+    role: "Head of Marketing",
+    image: "/team/Dipa.png",
+    bio: "Experienced in global tech marketing and strategy.",
+    linkedin: "#",
+  },
+  {
+    name: "Fahima Chowdhury",
+    role: "Development Lead",
+    image: "/team/Mi.jpg",
+    bio: "Senior web engineer specializing in full-stack solutions.",
+    linkedin: "#",
+  },
+  {
+    name: "Rakib Bhuiyan",
+    role: "Data Engineer",
+    image: "/team/Rakib.jpeg",
+    bio: "Expert in building scalable data pipelines for analytics.",
+    linkedin: "#",
+  },
+  {
+    name: "Binita Shammi Naz Shahid",
+    role: "UI/UX Designer",
+    image: "/team/Bangi1.jpeg",
+    objectPosition: "center",
+    bio: "Designer focused on intuitive, human-centered interfaces.",
+    linkedin: "#",
+  },
+  {
+    name: "Rizouan Ur Rashid",
+    role: "Cyber Security Engineer",
+    image: "/team/Nohan.jpeg",
+    bio: "Specialist in protecting systems against modern threats.",
+    linkedin: "#",
+  },
 ];
 
 const milestones = [
-  { year: "2024", text: "RadianCore founded to help companies embrace AI and cloud technologies without complexity." },
-  { year: "2025", text: "Expanded core team to include 20+ specialized engineers and launched AI/ML division." },
-  { year: "2026", text: "Completed 50+ successful projects globally and opened our second regional operations hub." },
+  { year: "2024", event: "RadianCore founded to help businesses embrace AI and cloud tech." },
+  { year: "2025", event: "First 20 projects delivered successfully across multiple industries." },
+  { year: "2025", event: "Expanded team and launched dedicated AI & Machine Learning division." },
+  { year: "2026", event: "Global client base established & Berlin office opened for European operations." },
 ];
 
 const About = () => {
@@ -44,7 +88,7 @@ const About = () => {
     <div className="flex flex-col items-center pb-24 border-t border-white/5 bg-transparent">
 
       {/* Mission */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row gap-12 md:gap-24">
+      <section className="w-full max-w-6xl mx-auto px-6 pt-32 pb-24 flex flex-col md:flex-row gap-12 md:gap-24">
         <div className="flex-1">
           <p className="text-[#00EAFF] text-xs font-semibold tracking-widest uppercase mb-4">OUR MISSION</p>
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
@@ -53,10 +97,7 @@ const About = () => {
         </div>
         <div className="flex-1 flex flex-col justify-center gap-6 text-lg text-gray-200 font-light leading-relaxed">
           <p>
-            RadianCore was founded to help companies embrace AI and cloud technologies without complexity. Our mission is to make innovation simple and reliable.
-          </p>
-          <p>
-            We bridge the gap between complex digital transformation and business growth. Our team doesn't just write code — we immerse ourselves in your industry to architect solutions that create lasting competitive advantages.
+            RadianCore was founded to help businesses embrace AI, cloud, and web technologies without complexity. Our mission is to deliver innovative, secure, and scalable solutions that drive real impact.
           </p>
         </div>
       </section>
@@ -71,13 +112,12 @@ const About = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {values.map((v) => (
-            <div key={v.title} className="bg-[#0A121D] border border-white/10 rounded-lg p-8 flex items-start gap-6 hover:border-[#00EAFF]/30 transition-all duration-300">
-              <div className="mt-1">
-                <v.icon className="w-6 h-6 text-[#00EAFF]" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">{v.title}</h3>
-                <p className="text-sm text-gray-200 leading-relaxed font-light">{v.desc}</p>
+            <div key={v.title} className="bg-[#0A121D] border border-white/10 rounded-lg p-8 flex flex-col gap-4 hover:border-[#00EAFF]/30 transition-all duration-300">
+              <h3 className="text-lg font-semibold text-white">{v.title}</h3>
+              <p className="text-sm text-gray-200 leading-relaxed font-light">{v.desc}</p>
+              <div className="pt-4 border-t border-white/5">
+                <p className="text-[#00EAFF] text-[10px] uppercase font-bold tracking-widest mb-1 italic">Achievement</p>
+                <p className="text-xs text-white font-semibold">{v.achievement}</p>
               </div>
             </div>
           ))}
@@ -92,30 +132,20 @@ const About = () => {
             Meet the <span className="text-[#00EAFF]">Team</span>
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((m) => (
-            <div key={m.name} className="bg-[#0A121D] border border-white/10 rounded-lg p-8 hover:border-[#00EAFF]/30 transition-all duration-300">
-              <div className="w-20 h-20 rounded-full overflow-hidden bg-[#00EAFF]/10 text-[#00EAFF] flex items-center justify-center font-bold text-lg mb-6">
-                {m.image ? (
-                  m.image.toLowerCase().endsWith('.mp4') ? (
-                    <video
-                      src={m.image}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <img src={m.image} alt={m.name} className="w-full h-full object-cover" />
-                  )
+            <div key={m.name} className="bg-[#0A121D] border border-white/10 rounded-xl p-8 hover:border-[#00EAFF]/30 transition-all duration-300 flex flex-col items-center text-center">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden mb-6 transition-transform duration-500 hover:scale-105 border-4 border-white/10 hover:border-[#00EAFF]/50 flex items-center justify-center bg-[#050B14]">
+                {m.image.endsWith('.mp4') ? (
+                  <video src={m.image} autoPlay loop muted playsInline className="w-full h-full object-cover" />
                 ) : (
-                  m.initials
+                  <img src={m.image} alt={m.name} className="w-full h-full object-cover" style={{ objectPosition: m.objectPosition || 'center' }} />
                 )}
               </div>
-              <h3 className="text-lg font-bold text-white mb-1">{m.name}</h3>
-              <p className="text-[#00EAFF] text-xs font-semibold mb-4">{m.role}</p>
-              <p className="text-sm text-gray-200 font-light leading-relaxed">{m.desc}</p>
+              <div className="flex-1 flex flex-col justify-center">
+                <h3 className="text-xl font-bold text-white mb-2">{m.name}</h3>
+                <p className="text-[#00EAFF] text-xs font-bold tracking-widest uppercase">{m.role}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -132,17 +162,19 @@ const About = () => {
         <div className="pl-6 md:pl-0 flex justify-center">
           <div className="relative border-l border-white/10 space-y-12 py-4">
             {milestones.map((m) => (
-              <div key={m.year} className="relative pl-10">
+              <div key={m.year + m.event} className="relative pl-10">
                 <div className="absolute w-2.5 h-2.5 rounded-full bg-[#00EAFF] -left-[5px] top-1.5 ring-4 ring-[#050B14]"></div>
                 <div className="flex flex-col">
                   <span className="text-[#00EAFF] font-bold text-sm mb-1">{m.year}</span>
-                  <p className="text-gray-200 font-light text-sm">{m.text}</p>
+                  <p className="text-gray-200 font-light text-sm">{m.event}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+
 
     </div>
   );

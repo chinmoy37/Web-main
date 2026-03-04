@@ -1,43 +1,41 @@
+import { ChevronRight } from "lucide-react";
+
 const caseStudies = [
   {
     image: "/case-studies/fraud-detection.png",
     industry: "FINTECH",
-    title: "AI-Powered Fraud Detection",
-    client: "Global Fintech Leader",
-    desc: "Built a sophisticated AI fraud detection system for a fintech startup using Python, TensorFlow, and AWS. The platform analyzes real-time transactional data to identify and block fraudulent activities before they occur.",
+    title: "AI Fraud Detection",
+    client: "Fintech Startup",
+    desc: "Challenge: High fraud risk in digital transactions. Solution: Developed sophisticated ML models using Python, TensorFlow, and AWS to analyze real-time transactional data.",
     metrics: [
-      { label: "FRAUD REDUCTION", value: "37%" },
-      { label: "ACCURACY RATE", value: "99.8%" },
-      { label: "LATENCY", value: "<15ms" },
+      { label: "FRAUD REDUCED", value: "37%" },
+      { label: "TIME FRAME", value: "3 Months" },
     ],
-    tags: ["Python", "TensorFlow", "AWS", "SageMaker"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop",
-    industry: "HEALTHCARE",
-    title: "AI-Powered Diagnostic Platform",
-    client: "MediVision.AI",
-    desc: "Built a HIPAA-compliant machine learning platform that assists radiologists in detecting anomalies with 98.7% accuracy, reducing diagnosis time from hours to minutes.",
-    metrics: [
-      { label: "DETECTION ACCURACY", value: "98.7%" },
-      { label: "TIME SAVED", value: "85%" },
-      { label: "SCANS PROCESSED", value: "1M+" },
-    ],
-    tags: ["Python", "TensorFlow", "AWS", "React"],
-    reverse: true,
+    tags: ["Python", "TensorFlow", "AWS", "MLOps"],
   },
   {
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-    industry: "E-COMMERCE",
-    title: "Scaling a Global Marketplace",
-    client: "VeloMarket",
-    desc: "Architected a globally distributed e-commerce platform handling 50K concurrent users with sub-200ms response times across 12 regions.",
+    industry: "RETAIL",
+    title: "E-Commerce Platform",
+    client: "Retail Client",
+    desc: "Challenge: Slow checkout and outdated design. Solution: Built a high-performance Next.js application with a fully optimized checkout flow and intuitive UI.",
     metrics: [
-      { label: "CONCURRENT USERS", value: "50K" },
-      { label: "RESPONSE TIME", value: "<200ms" },
-      { label: "REVENUE GROWTH", value: "340%" },
+      { label: "FASTER CHECKOUT", value: "40%" },
+      { label: "CONVERSIONS", value: "+20%" },
     ],
-    tags: ["Next.js", "Node.js", "Redis", "Cloudflare"],
+    tags: ["Next.js", "React", "Node.js", "Tailwind"],
+  },
+  {
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+    industry: "ENTERPRISE",
+    title: "Cloud Migration",
+    client: "Enterprise Client",
+    desc: "Challenge: On-premises infrastructure was expensive and hard to scale. Solution: Migrated entire workload to AWS and implemented robust CI/CD pipelines.",
+    metrics: [
+      { label: "COST REDUCTION", value: "25%" },
+      { label: "SCALABILITY", value: "Unlimited" },
+    ],
+    tags: ["AWS", "DevOps", "CI/CD", "Terraform"],
   },
   {
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
@@ -102,20 +100,20 @@ const testimonials = [
 
 const CaseStudies = () => {
   return (
-    <div className="flex flex-col items-center pb-24 border-t border-white/5 bg-transparent">
-      {/* Header */}
-      <section className="w-full max-w-6xl mx-auto px-6 pt-24 pb-12">
+    <section id="case-studies" className="section-padding bg-transparent flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-6 mb-24 text-center mt-20">
         <p className="text-[#00EAFF] text-xs font-semibold tracking-widest uppercase mb-4">CASE STUDIES</p>
-        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-          Results That <span className="text-[#00EAFF]">Speak</span> for<br className="hidden md:block" /> Themselves
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-8">
+          Our Work – <br />
+          <span className="text-[#00EAFF]">Real Projects</span>, Real Impact
         </h1>
-        <p className="text-gray-200 font-light max-w-2xl leading-relaxed">
-          Explore how we've helped industry leaders solve complex challenges and achieve measurable business outcomes through technology.
+        <p className="text-gray-200 font-light max-w-2xl mx-auto leading-relaxed text-lg">
+          Explore how we help businesses transform their digital landscape through AI, scale, and strategic innovation.
         </p>
-      </section>
+      </div>
 
       {/* Case Studies List */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-12 space-y-12">
+      <div className="max-w-7xl mx-auto px-6 space-y-32">
         {caseStudies.map((study) => (
           <div
             key={study.title}
@@ -168,7 +166,7 @@ const CaseStudies = () => {
             </div>
           </div>
         ))}
-      </section>
+      </div>
 
       {/* Testimonials */}
       <section className="w-full max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
@@ -192,7 +190,9 @@ const CaseStudies = () => {
           ))}
         </div>
       </section>
-    </div>
+
+
+    </section>
   );
 };
 

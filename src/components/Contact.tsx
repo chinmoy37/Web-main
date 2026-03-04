@@ -18,10 +18,8 @@ const faqs = [
 ];
 
 const offices = [
-  { city: "San Francisco", address: "400 Mason St, Suite 200", tz: "PST (UTC-8)", phone: "+1 (415) 555-0142" },
-  { city: "London", address: "71 Queen Victoria St, EC4V 4AY", tz: "GMT (UTC+0)", phone: "+44 20 7946 0953" },
-  { city: "Singapore", address: "1 Raffles Place, #44-01", tz: "SGT (UTC+8)", phone: "+65 6872 4567" },
-  { city: "Berlin", address: "Friedrichstraße 133, 10117", tz: "CET (UTC+1)", phone: "+49 30 1234 5678" }
+  { city: "San Francisco", address: "400 Mason St, Suite 200, CA", tz: "PST (UTC-8)", phone: "+1 (415) 555-0142" },
+  { city: "Berlin", address: "Friedrichstraße 133, 10117, Germany", tz: "CET (UTC+1)", phone: "+49 30 1234 5678" }
 ];
 
 const Contact = () => {
@@ -78,14 +76,36 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-xs font-semibold text-white mb-2">Email</label>
-                  <input type="email" required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors" placeholder="john@company.com" />
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-white mb-2">Email</label>
+                    <input type="email" required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors" placeholder="john@company.com" />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white mb-2">Phone Number (Optional)</label>
+                    <input type="tel" className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors" placeholder="+1 (555) 000-0000" />
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block text-xs font-semibold text-white mb-2">Company</label>
-                  <input type="text" className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors" placeholder="Acme Inc." />
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-white mb-2">Company</label>
+                    <input type="text" className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors" placeholder="Acme Inc." />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-white mb-2">Project Type</label>
+                    <div className="relative">
+                      <select required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-gray-200 text-sm focus:border-[#00EAFF] focus:outline-none transition-colors appearance-none cursor-pointer">
+                        <option value="" disabled selected>Select a type</option>
+                        <option value="web">Web Development</option>
+                        <option value="ai">AI & ML Solutions</option>
+                        <option value="security">Cybersecurity</option>
+                        <option value="cloud">Cloud & DevOps</option>
+                        <option value="other">Other</option>
+                      </select>
+                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-200 pointer-events-none" />
+                    </div>
+                  </div>
                 </div>
 
                 <div>
@@ -106,8 +126,15 @@ const Contact = () => {
                   <textarea rows={4} required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors resize-none mb-2" placeholder="Describe your project, challenges, and goals..." />
                 </div>
 
+                <div className="flex items-start gap-3">
+                  <input type="checkbox" required id="privacy" className="mt-1 accent-[#00EAFF]" />
+                  <label htmlFor="privacy" className="text-[10px] text-gray-400 leading-tight cursor-pointer">
+                    I agree to RadianCore’s privacy policy. We will never share your data.
+                  </label>
+                </div>
+
                 <button type="submit" className="w-full bg-[#00EAFF] hover:bg-[#00EAFF]/90 text-black font-semibold py-4 rounded text-sm flex items-center justify-center gap-2 transition-colors">
-                  Get Your Free Consultation Today
+                  Get Your Free Consultation
                   <Send className="h-4 w-4" />
                 </button>
               </form>
@@ -119,25 +146,25 @@ const Contact = () => {
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <Mail className="h-5 w-5 text-[#00EAFF] mb-4" />
               <h3 className="text-white font-bold text-sm mb-1">Email Us</h3>
-              <p className="text-gray-200 text-xs mb-1">radiancoresys@gmail.com</p>
+              <p className="text-gray-200 text-xs mb-1">hello@radiancore.com</p>
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <div className="flex items-center gap-4 mb-4">
                 <Globe className="h-5 w-5 text-[#00EAFF]" />
-                <h3 className="text-white font-bold text-sm">Social Presence</h3>
+                <h3 className="text-white font-bold text-sm">Follow Our Journey</h3>
               </div>
-              <div className="flex gap-4">
-                <a href="https://linkedin.com/company/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">LinkedIn</a>
-                <a href="https://twitter.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">Twitter</a>
-                <a href="https://github.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">GitHub</a>
+              <div className="flex gap-6">
+                <a href="https://linkedin.com/company/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">LinkedIn</a>
+                <a href="https://twitter.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">Twitter</a>
+                <a href="https://github.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
               </div>
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <Clock className="h-5 w-5 text-[#00EAFF] mb-4" />
-              <h3 className="text-white font-bold text-sm mb-1">Response Time</h3>
-              <p className="text-gray-200 text-xs">We respond within 2 business hours</p>
+              <h3 className="text-white font-bold text-sm mb-1">Working Hours</h3>
+              <p className="text-gray-200 text-xs">Mon - Fri: 9:00 AM - 6:00 PM (Local Time)</p>
             </div>
 
             <div className="h-full bg-transparent border border-white/10 rounded-lg overflow-hidden min-h-[200px] relative">
