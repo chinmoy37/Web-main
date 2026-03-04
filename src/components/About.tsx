@@ -24,13 +24,13 @@ const values = [
 ];
 
 const team = [
-  { image: "team/aa.mp4", initials: "DK", name: " Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "team/Chinmoy.png", initials: "dfdf", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
-  { image: "team/Dipa.png", initials: "DK", name: " Ruhia Rahman", role: "Head of Marketing & Seals", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "team/Mi.jpg", initials: "DK", name: "Fahima Chowdhury", role: "Development Lead", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "team/Rakib.jpeg", initials: "DK", name: " Rakib Bhuiyan", role: "Data Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "/team/Bangi1.jpeg", initials: "AC", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
-  { image: "team/Nohan.jpeg", initials: "DK", name: " Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/aa.mp4", initials: "AC", name: " Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/Chinmoy.png", initials: "CD", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
+  { image: "/team/Dipa.png", initials: "RR", name: " Ruhia Rahman", role: "Head of Marketing & Sales", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/Mi.jpg", initials: "FC", name: "Fahima Chowdhury", role: "Development Lead", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/Rakib.jpeg", initials: "RB", name: " Rakib Bhuiyan", role: "Data Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/Bangi1.jpeg", initials: "BS", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
+  { image: "/team/Nohan.jpeg", initials: "RR", name: " Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
 
 ];
 
@@ -102,7 +102,18 @@ const About = () => {
             <div key={m.name} className="bg-[#0A121D] border border-white/10 rounded-lg p-8 hover:border-[#00EAFF]/30 transition-all duration-300">
               <div className="w-20 h-20 rounded-full overflow-hidden bg-[#00EAFF]/10 text-[#00EAFF] flex items-center justify-center font-bold text-lg mb-6">
                 {m.image ? (
-                  <img src={m.image} alt={m.name} className="w-full h-full object-cover" />
+                  m.image.toLowerCase().endsWith('.mp4') ? (
+                    <video
+                      src={m.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <img src={m.image} alt={m.name} className="w-full h-full object-cover" />
+                  )
                 ) : (
                   m.initials
                 )}
