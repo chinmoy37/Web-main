@@ -4,44 +4,39 @@ const values = [
   {
     icon: Terminal,
     title: "Precision Engineering",
-    desc: "Every line of code is purposeful. We don’t cut corners — we build solutions designed to endure and scale.",
+    desc: "Every line of code is purposeful. We implemented AI-based automation that reduced client infrastructure costs by 20% through efficient resource allocation.",
   },
   {
     icon: Heart,
     title: "Client Obsession",
-    desc: "Your success is our mission. We integrate seamlessly with your team, treating your challenges as our own.",
+    desc: "Your success is our mission. We maintain a 99% client satisfaction rate across 50+ delivered projects by treating your challenges as our own.",
   },
   {
     icon: Lightbulb,
     title: "Relentless Innovation",
-    desc: "We stay ahead of the curve, constantly exploring emerging technologies and modern methodologies to deliver smarter solutions.",
+    desc: "We stay ahead of the curve, constantly exploring emerging technologies like LLMs and Edge Computing to deliver smarter, faster solutions.",
   },
   {
     icon: Globe,
     title: "Global Perspective",
-    desc: "With team members across multiple countries, we bring diverse perspectives and expertise to every challenge, ensuring broad, informed solutions.",
+    desc: "With team members specializing in diverse ecosystems, we bring unique perspectives to solve complex problems for international startups and enterprises.",
   },
 ];
 
 const team = [
-  { image: "/team/aa.mp4", initials: "AC", name: " Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "/team/Chinmoy.png", initials: "CD", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
-  { image: "/team/Dipa.png", initials: "RR", name: " Ruhia Rahman", role: "Head of Marketing & Sales", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "/team/Mi.jpg", initials: "FC", name: "Fahima Chowdhury", role: "Development Lead", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "/team/Rakib.jpeg", initials: "RB", name: " Rakib Bhuiyan", role: "Data Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "/team/Bangi1.jpeg", initials: "BS", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
-  { image: "/team/Nohan.jpeg", initials: "RR", name: " Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-
+  { image: "/team/aa.mp4", initials: "AC", name: "Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Specializes in high-performance distributed systems. Leading the technical vision and engineering excellence at RadianCore." },
+  { image: "/team/Chinmoy.png", initials: "CD", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Expert in enterprise-scale cloud operations. Ensuring seamless project delivery and operational efficiency for all global clients." },
+  { image: "/team/Dipa.png", initials: "RR", name: "Ruhia Rahman", role: "Head of Marketing & Sales", desc: "Strategist behind RadianCore's global outreach. Focused on building strong, long-term partnerships with tech-forward enterprises." },
+  { image: "/team/Mi.jpg", initials: "FC", name: "Fahima Chowdhury", role: "Development Lead", desc: "Full-stack architect with a focus on scalable React applications. Mentors our engineering teams to deliver pixel-perfect software." },
+  { image: "/team/Rakib.jpeg", initials: "RB", name: "Rakib Bhuiyan", role: "Data Engineer", desc: "Builds robust data pipelines and machine learning models. Turning complex data into actionable insights for our fintech partners." },
+  { image: "/team/Bangi1.jpeg", initials: "BS", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Dedicated to user-centric design. Creates intuitive interfaces that bridge the gap between complex technology and human interaction." },
+  { image: "/team/Nohan.jpeg", initials: "RR", name: "Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Guardian of our clients' digital assets. Implements zero-trust architectures and rigorous security compliance protocols." },
 ];
 
 const milestones = [
-  { year: "2014", text: "Founded in San Francisco by Alex & Mike" },
-  { year: "2016", text: "First $5M revenue milestone, team of 10" },
-  { year: "2018", text: "Expanded to London and Singapore offices" },
-  { year: "2020", text: "Launched AI/ML division, 100+ employees" },
-  { year: "2022", text: "Series B funding, valued at $150M" },
-  { year: "2024", text: "250+ projects delivered, 50+ engineers" },
-  { year: "2026", text: "Opened Berlin office, launched NovaTech Labs" },
+  { year: "2024", text: "RadianCore founded to help companies embrace AI and cloud technologies without complexity." },
+  { year: "2025", text: "Expanded core team to include 20+ specialized engineers and launched AI/ML division." },
+  { year: "2026", text: "Completed 50+ successful projects globally and opened our second regional operations hub." },
 ];
 
 const About = () => {
@@ -58,10 +53,10 @@ const About = () => {
         </div>
         <div className="flex-1 flex flex-col justify-center gap-6 text-lg text-gray-200 font-light leading-relaxed">
           <p>
-            Founded in 2024, RadianCore was created to solve a simple challenge: many businesses struggle to find technology partners who truly understand both the technical and business sides of operations.
+            RadianCore was founded to help companies embrace AI and cloud technologies without complexity. Our mission is to make innovation simple and reliable.
           </p>
           <p>
-            We bridge that gap. Our team doesn't just write code — we immerse ourselves in your industry, understand your customers, and architect solutions that create lasting competitive advantages. Every project we take on is a partnership, not a transaction.
+            We bridge the gap between complex digital transformation and business growth. Our team doesn't just write code — we immerse ourselves in your industry to architect solutions that create lasting competitive advantages.
           </p>
         </div>
       </section>

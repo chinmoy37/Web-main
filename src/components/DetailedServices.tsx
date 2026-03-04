@@ -60,9 +60,29 @@ const processSteps = [
     },
     {
         number: "04",
-        title: "Launch & Scale",
-        desc: "Production deployment with monitoring, optimization, and ongoing support.",
+        title: "QA & Testing",
+        desc: "Rigorous automated and manual testing to ensure performance, security, and bug-free delivery.",
     },
+    {
+        number: "05",
+        title: "Deployment & Maintenance",
+        desc: "Zero-downtime production launch followed by 24/7 monitoring and iterative improvements.",
+    },
+];
+
+const pricingPlans = [
+    {
+        name: "Custom MVP",
+        price: "$5,000",
+        desc: "Perfect for startups looking to validate their core value proposition quickly.",
+        features: ["Feature prioritization", "UI/UX Prototype", "Core Logic Implementation", "Cloud Setup"],
+    },
+    {
+        name: "Enterprise Solution",
+        price: "Custom",
+        desc: "Scalable systems built for high-performance and complex business requirements.",
+        features: ["Scalable Architecture", "Advanced AI/ML Integration", "SOC 2 Compliance", "Dedicated Support"],
+    }
 ];
 
 const techStack = [
@@ -130,19 +150,49 @@ const DetailedServices = () => {
                 <div className="text-center mb-16">
                     <p className="text-[#00EAFF] text-xs font-semibold tracking-widest uppercase mb-3">OUR PROCESS</p>
                     <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                        How We <span className="text-[#00EAFF]">Deliver</span>
+                        How We <span className="text-[#00EAFF]">Deliver success</span>
                     </h2>
                 </div>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
                     {processSteps.map((step) => (
                         <div key={step.number} className="bg-[#0A121D] border border-white/10 rounded-xl p-8 hover:border-[#00EAFF]/30 transition-all duration-300 group">
-                            <span className="text-3xl font-bold text-white/20 group-hover:text-[#00EAFF]/40 transition-colors mb-6 block">
+                            <span className="text-3xl font-bold text-white/20 group-hover:text-[#00EAFF]/40 transition-colors mb-6 block font-mono">
                                 {step.number}
                             </span>
-                            <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                            <p className="text-sm text-gray-200 font-light leading-relaxed">
+                            <h3 className="text-lg font-bold text-white mb-3 leading-tight">{step.title}</h3>
+                            <p className="text-[xs] sm:text-sm text-gray-200 font-light leading-relaxed">
                                 {step.desc}
                             </p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Pricing Section */}
+            <section className="w-full max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+                <div className="text-center mb-16">
+                    <p className="text-[#00EAFF] text-xs font-semibold tracking-widest uppercase mb-3">PLANNING</p>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                        Project <span className="text-[#00EAFF]">Investment</span>
+                    </h2>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    {pricingPlans.map((plan) => (
+                        <div key={plan.name} className="bg-[#0A121D] border border-white/10 rounded-xl p-10 hover:border-[#00EAFF]/30 transition-all duration-300">
+                            <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
+                            <p className="text-sm text-gray-400 mb-6 font-light">{plan.desc}</p>
+                            <div className="flex items-baseline gap-2 mb-8 border-b border-white/5 pb-8">
+                                <span className="text-xs text-gray-400 uppercase font-bold tracking-widest">Starting at</span>
+                                <span className="text-4xl font-bold text-white">{plan.price}</span>
+                            </div>
+                            <ul className="space-y-4">
+                                {plan.features.map((feature) => (
+                                    <li key={feature} className="flex items-center gap-3 text-sm text-gray-200 font-light">
+                                        <ChevronRight className="h-4 w-4 text-[#00EAFF]" />
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>

@@ -27,12 +27,12 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 text-white">
-            We Build Technology<br />
-            That <span className="text-[#00EAFF]">Drives Growth</span>
+            AI-Driven Solutions for<br />
+            <span className="text-[#00EAFF]">Startups & Enterprises</span>
           </h1>
 
           <p className="text-sm md:text-base text-gray-400 max-w-xl mb-12 leading-relaxed font-light">
-            Enterprise-grade software development, cloud solutions, and digital transformation — engineered for scale and built for impact.
+            RadianCore builds AI-driven solutions that help startups and enterprises scale securely and efficiently.
           </p>
 
           {/* Buttons */}
@@ -41,13 +41,13 @@ const Hero = () => {
               href="#contact"
               className="inline-flex items-center justify-center bg-[#00EAFF] text-black px-8 py-3.5 rounded font-bold text-xs uppercase tracking-wider hover:bg-[#00EAFF]/90 transition-all duration-300 gap-2 group"
             >
-              Start Your Project <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              Book a Free Consultation <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#services"
+              href="#case-studies"
               className="inline-flex items-center justify-center border border-white/10 text-white bg-white/5 px-8 py-3.5 rounded font-bold text-xs uppercase tracking-wider hover:bg-white/10 transition-all duration-300 gap-2 group"
             >
-              Explore Services
+              View Our Case Studies
             </a>
           </div>
         </div>

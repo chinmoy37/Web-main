@@ -3,8 +3,8 @@ import { Activity, Cloud, Smartphone, Shield, Database, Globe } from "lucide-rea
 const services = [
   {
     icon: Activity,
-    title: "Custom Software Development",
-    desc: "Tailored solutions built with modern tech stacks to streamline your business processes and drive growth.",
+    title: "Web Development",
+    desc: "Custom websites and apps using React, Next.js, and Node.js — built for speed and scalability.",
   },
   {
     icon: Cloud,
@@ -18,13 +18,13 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Cybersecurity Solutions",
-    desc: "End-to-end security audits, threat detection, and compliance frameworks to protect your digital assets.",
+    title: "Cybersecurity",
+    desc: "Protect your data with enterprise-grade security solutions, compliance audits, and threat detection.",
   },
   {
     icon: Database,
-    title: "Data & AI Analytics",
-    desc: "Transform raw data into actionable insights with machine learning, BI dashboards, and predictive analytics.",
+    title: "AI & Data Analytics",
+    desc: "AI models tailored to your business goals, machine learning pipelines, and predictive analytics.",
   },
   {
     icon: Globe,

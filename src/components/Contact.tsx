@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
 
                 <button type="submit" className="w-full bg-[#00EAFF] hover:bg-[#00EAFF]/90 text-black font-semibold py-4 rounded text-sm flex items-center justify-center gap-2 transition-colors">
-                  Send Message
+                  Get Your Free Consultation Today
                   <Send className="h-4 w-4" />
                 </button>
               </form>
@@ -120,13 +120,18 @@ const Contact = () => {
               <Mail className="h-5 w-5 text-[#00EAFF] mb-4" />
               <h3 className="text-white font-bold text-sm mb-1">Email Us</h3>
               <p className="text-gray-200 text-xs mb-1">radiancoresys@gmail.com</p>
-
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
-              <MessageSquare className="h-5 w-5 text-[#00EAFF] mb-4" />
-              <h3 className="text-white font-bold text-sm mb-1">Live Chat</h3>
-              <p className="text-gray-200 text-xs">Available, 10am-6pm </p>
+              <div className="flex items-center gap-4 mb-4">
+                <Globe className="h-5 w-5 text-[#00EAFF]" />
+                <h3 className="text-white font-bold text-sm">Social Presence</h3>
+              </div>
+              <div className="flex gap-4">
+                <a href="https://linkedin.com/company/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">LinkedIn</a>
+                <a href="https://twitter.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">Twitter</a>
+                <a href="https://github.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold">GitHub</a>
+              </div>
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
@@ -135,10 +140,17 @@ const Contact = () => {
               <p className="text-gray-200 text-xs">We respond within 2 business hours</p>
             </div>
 
-            <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
-              <Globe className="h-5 w-5 text-[#00EAFF] mb-4" />
-              <h3 className="text-white font-bold text-sm mb-1">Global Presence</h3>
-              <p className="text-gray-200 text-xs">Offices in SF, London, Singapore & Berlin</p>
+            <div className="h-full bg-transparent border border-white/10 rounded-lg overflow-hidden min-h-[200px] relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158855.12781559885!2d-122.51862417865181!3d37.75545281895696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1709462400000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, opacity: 0.6 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 grayscale invert"
+              ></iframe>
             </div>
           </div>
         </div>

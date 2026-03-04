@@ -1,16 +1,16 @@
 const caseStudies = [
   {
-    image: "https://images.unsplash.com/photo-1551288049-bbbda536639a?q=80&w=1000&auto=format&fit=crop",
+    image: "/case-studies/fraud-detection.png",
     industry: "FINTECH",
-    title: "Rebuilding a $2B Payment Platform",
-    client: "QuantumPay",
-    desc: "Migrated a monolithic payment system to a microservices architecture, reducing transaction latency by 72% and enabling 10x throughput.",
+    title: "AI-Powered Fraud Detection",
+    client: "Global Fintech Leader",
+    desc: "Built a sophisticated AI fraud detection system for a fintech startup using Python, TensorFlow, and AWS. The platform analyzes real-time transactional data to identify and block fraudulent activities before they occur.",
     metrics: [
-      { label: "LATENCY REDUCTION", value: "73%" },
-      { label: "THROUGHPUT INCREASE", value: "10x" },
-      { label: "UPTIME ACHIEVED", value: "99.99%" },
+      { label: "FRAUD REDUCTION", value: "37%" },
+      { label: "ACCURACY RATE", value: "99.8%" },
+      { label: "LATENCY", value: "<15ms" },
     ],
-    tags: ["Go", "Kubernetes", "Kafka", "PostgreSQL"],
+    tags: ["Python", "TensorFlow", "AWS", "SageMaker"],
   },
   {
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop",
@@ -84,17 +84,17 @@ const caseStudies = [
 
 const testimonials = [
   {
-    quote: "NovaTech didn't just build our platform — they architected our future. The scalability we have now is something we only dreamed of before they stepped in.",
+    quote: "RadianCore didn't just build our platform — they architected our future. The scalability we have now is something we only dreamed of before they stepped in.",
     author: "Sarah Jenkins",
     role: "CTO, QuantumPay",
   },
   {
-    quote: "Working with NovaTech felt like having a local engineering team. Their communication is impeccable, and the quality of code is the best I've seen in 20 years.",
+    quote: "Working with RadianCore felt like having a local engineering team. Their communication is impeccable, and the quality of code is the best I've seen in 20 years.",
     author: "Mark Thompson",
     role: "VP Engineering, MediVision.AI",
   },
   {
-    quote: "Our revenue grew 340% after the platform overhaul. NovaTech's focus on performance and conversion optimization was the key driver of our global success.",
+    quote: "Our revenue grew 340% after the platform overhaul. RadianCore's focus on performance and conversion optimization was the key driver of our global success.",
     author: "Elena Rodriguez",
     role: "CEO, VeloMarket",
   },

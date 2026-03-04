@@ -7,8 +7,18 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
-    title: "radian-core",
-    description: "Next.js App",
+    title: "RadianCore | AI & Web Solutions for Businesses",
+    description: "RadianCore builds AI-powered solutions, web apps, and secure infrastructure for startups and enterprises.",
+    keywords: ["AI", "Web Development", "Cybersecurity", "Cloud Solutions", "RadianCore"],
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RadianCore",
+    "url": "https://web-main-ebon-seven.vercel.app",
+    "logo": "https://web-main-ebon-seven.vercel.app/logo.png",
+    "sameAs": ["https://www.linkedin.com/company/radiancore"]
 };
 
 export default function RootLayout({
@@ -19,6 +29,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`antialiased bg-[#050B14] text-white min-h-screen`}>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
                 <div className="fixed inset-0 z-0 pointer-events-none">
                     <img
                         src="/main-bg.jpg"
