@@ -7,9 +7,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
-    title: "RadianCore | AI & Web Solutions for Businesses",
-    description: "RadianCore builds AI-powered solutions, web apps, and secure infrastructure for startups and enterprises.",
-    keywords: ["AI", "Web Development", "Cybersecurity", "Cloud Solutions", "RadianCore"],
+    title: "RadianCore | Custom Software, ERP, E‑Commerce, POS & Web Solutions",
+    description: "We design and develop tailored software solutions for businesses, including ERP systems, e‑commerce platforms, POS systems, and websites that are scalable, secure, and optimized for growth.",
+    keywords: ["Custom Software", "ERP", "E‑Commerce", "POS", "Web Solutions", "RadianCore"],
 };
 
 const jsonLd = {
