@@ -24,11 +24,12 @@ const values = [
 ];
 
 const team = [
-  { image: "/team/Bangi1.jpeg", initials: "AC", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
-  { image: "team/Chinmoy.png", initials: "dfdf", name: "Chinmoy Kumar Das", role: "COO", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
+  { image: "team/aa.mp4", initials: "DK", name: " Ajfar Uddin Ahmed Chowdhury", role: "Chief Technology Officer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "team/Chinmoy.png", initials: "dfdf", name: "Chinmoy Kumar Das", role: "Chief Operating Officer", desc: "Ex-Google Cloud architect. Pioneered multi-region deployment strategies." },
   { image: "team/Dipa.png", initials: "DK", name: " Ruhia Rahman", role: "Head of Marketing & Seals", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "team/Mi.jpg", initials: "DK", name: "Fahima Chowdhury", role: "Development Lead", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
   { image: "team/Rakib.jpeg", initials: "DK", name: " Rakib Bhuiyan", role: "Data Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
-  { image: "team/aa.mp4", initials: "DK", name: " Ajfar Uddin Ahmed Chowdhury", role: "CTO", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
+  { image: "/team/Bangi1.jpeg", initials: "AC", name: "Binita Shammi Naz Shahid", role: "UI/UX Designer", desc: "Former VP Engineering at Stripe. 15+ years building scalable payment systems." },
   { image: "team/Nohan.jpeg", initials: "DK", name: " Rizouan Ur Rashid", role: "Cyber Security Engineer", desc: "Built engineering teams at Uber and Airbnb. Expert in distributed systems." },
 
 ];
