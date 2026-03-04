@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
             <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#00EAFF] transition-colors">
               {r.title}
             </h3>
-            <p className="text-sm text-gray-400 font-light leading-relaxed">
+            <p className="text-sm text-gray-200 font-light leading-relaxed">
               {r.desc}
             </p>
           </div>

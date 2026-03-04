@@ -95,7 +95,7 @@ const About = () => {
             Empowering businesses through <br className="hidden md:block" /> <span className="text-[#00EAFF]">RadianCore</span>
           </h2>
         </div>
-        <div className="flex-1 flex flex-col justify-center gap-6 text-lg text-gray-200 font-light leading-relaxed">
+        <div className="flex-1 flex flex-col justify-center gap-6 text-lg text-white font-light leading-relaxed">
           <p>
             RadianCore was founded to help businesses embrace AI, cloud, and web technologies without complexity. Our mission is to deliver innovative, secure, and scalable solutions that drive real impact.
           </p>
@@ -114,7 +114,7 @@ const About = () => {
           {values.map((v) => (
             <div key={v.title} className="bg-[#0A121D] border border-white/10 rounded-lg p-8 flex flex-col gap-4 hover:border-[#00EAFF]/30 transition-all duration-300">
               <h3 className="text-lg font-semibold text-white">{v.title}</h3>
-              <p className="text-sm text-gray-200 leading-relaxed font-light">{v.desc}</p>
+              <p className="text-sm text-white leading-relaxed font-light">{v.desc}</p>
               <div className="pt-4 border-t border-white/5">
                 <p className="text-[#00EAFF] text-[10px] uppercase font-bold tracking-widest mb-1 italic">Achievement</p>
                 <p className="text-xs text-white font-semibold">{v.achievement}</p>
@@ -166,7 +166,7 @@ const About = () => {
                 <div className="absolute w-2.5 h-2.5 rounded-full bg-[#00EAFF] -left-[5px] top-1.5 ring-4 ring-[#050B14]"></div>
                 <div className="flex flex-col">
                   <span className="text-[#00EAFF] font-bold text-sm mb-1">{m.year}</span>
-                  <p className="text-gray-200 font-light text-sm">{m.event}</p>
+                  <p className="text-white font-light text-sm">{m.event}</p>
                 </div>
               </div>
             ))}

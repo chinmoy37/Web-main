@@ -10,10 +10,10 @@ const Footer = () => {
             RadianCore
           </span>
         </div>
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-200">
           © {new Date().getFullYear()} RadianCore. All rights reserved.
         </p>
-        <div className="flex items-center gap-1.5 text-xs text-gray-400">
+        <div className="flex items-center gap-1.5 text-xs text-gray-200">
           <span className="inline-block w-2 h-2 rounded-full bg-green-500" />
           All systems operational
         </div>

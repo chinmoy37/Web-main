@@ -107,7 +107,7 @@ const DetailedServices = () => {
                     Our Services – <br />
                     <span className="text-[#00EAFF]">Tailored Solutions</span> for Every Business Challenge
                 </h1>
-                <p className="text-gray-200 font-light max-w-2xl mx-auto leading-relaxed text-lg">
+                <p className="text-white font-light max-w-2xl mx-auto leading-relaxed text-lg">
                     We deliver specialized technology solutions that empower businesses to innovate, scale, and lead their industries.
                 </p>
             </section>
@@ -126,7 +126,7 @@ const DetailedServices = () => {
                                 <service.icon className="h-6 w-6 text-[#00EAFF]" />
                             </div>
                             <h2 className="text-3xl font-bold text-white">{service.title}</h2>
-                            <p className="text-gray-200 font-light leading-relaxed max-w-lg">
+                            <p className="text-white font-light leading-relaxed max-w-lg">
                                 {service.desc}
                             </p>
                             <button className="flex items-center gap-2 text-white text-xs font-bold uppercase tracking-wider group bg-white/5 px-4 py-2 rounded-md hover:bg-white/10 transition-colors">
@@ -165,7 +165,7 @@ const DetailedServices = () => {
                                 {step.number}
                             </span>
                             <h3 className="text-lg font-bold text-white mb-3 leading-tight">{step.title}</h3>
-                            <p className="text-[xs] sm:text-sm text-gray-200 font-light leading-relaxed">
+                            <p className="text-[xs] sm:text-sm text-white font-light leading-relaxed">
                                 {step.desc}
                             </p>
                         </div>
@@ -185,14 +185,14 @@ const DetailedServices = () => {
                     {pricingPlans.map((plan) => (
                         <div key={plan.name} className="bg-[#0A121D] border border-white/10 rounded-xl p-10 hover:border-[#00EAFF]/30 transition-all duration-300">
                             <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
-                            <p className="text-sm text-gray-400 mb-6 font-light">{plan.desc}</p>
+                            <p className="text-sm text-gray-200 mb-6 font-light">{plan.desc}</p>
                             <div className="flex items-baseline gap-2 mb-8 border-b border-white/5 pb-8">
-                                <span className="text-xs text-gray-400 uppercase font-bold tracking-widest">Starting at</span>
+                                <span className="text-xs text-gray-200 uppercase font-bold tracking-widest">Starting at</span>
                                 <span className="text-4xl font-bold text-white">{plan.price}</span>
                             </div>
                             <ul className="space-y-4">
                                 {plan.features.map((feature) => (
-                                    <li key={feature} className="flex items-center gap-3 text-sm text-gray-200 font-light">
+                                    <li key={feature} className="flex items-center gap-3 text-sm text-white font-light">
                                         <ChevronRight className="h-4 w-4 text-[#00EAFF]" />
                                         {feature}
                                     </li>
@@ -219,7 +219,7 @@ const DetailedServices = () => {
                             </h3>
                             <ul className="space-y-3">
                                 {category.techs.map((tech) => (
-                                    <li key={tech} className="text-sm text-gray-200 font-light hover:text-white transition-colors cursor-default">
+                                    <li key={tech} className="text-sm text-white font-light hover:text-white transition-colors cursor-default">
                                         {tech}
                                     </li>
                                 ))}

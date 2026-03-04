@@ -41,7 +41,7 @@ const Services = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Services That <span className="text-[#00EAFF]">Drive Results</span>
         </h2>
-        <p className="text-gray-400 font-light max-w-2xl mx-auto leading-relaxed text-sm">
+        <p className="text-gray-200 font-light max-w-2xl mx-auto leading-relaxed text-sm">
           We deliver end-to-end technology solutions that empower businesses to innovate, scale, and lead their industries.
         </p>
       </div>
@@ -58,7 +58,7 @@ const Services = () => {
             <h3 className="text-lg font-bold text-white mb-4 group-hover:text-[#00EAFF] transition-colors leading-tight">
               {s.title}
             </h3>
-            <p className="text-sm text-gray-200 font-light leading-relaxed">
+            <p className="text-sm text-white font-light leading-relaxed">
               {s.desc}
             </p>
           </div>

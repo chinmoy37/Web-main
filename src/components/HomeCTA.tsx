@@ -14,7 +14,7 @@ const HomeCTA = () => {
           Launch Your <span className="text-[#00EAFF]">Next Project</span><br />
           With Confidence
         </h2>
-        <p className="text-gray-400 font-semibold max-w-lg mx-auto mb-12 leading-relaxed text-sm">
+        <p className="text-gray-200 font-semibold max-w-lg mx-auto mb-12 leading-relaxed text-sm">
           Partner with RadianCore and unlock the full potential of digital innovation. Let’s build scalable, secure, and future-ready solutions tailored to your business goals.
         </p>
 

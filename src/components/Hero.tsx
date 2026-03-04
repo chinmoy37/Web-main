@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="relative z-10 w-full flex flex-col items-center text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-white/60 text-[10px] font-bold tracking-[0.2em] uppercase mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-white/90 text-[10px] font-bold tracking-[0.2em] uppercase mb-10">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00EAFF]" /> Trusted by 250+ companies worldwide
           </div>
 
@@ -31,7 +31,7 @@ const Hero = () => {
             <span className="text-[#00EAFF]">AI & Web Solutions</span> for Businesses
           </h1>
 
-          <p className="text-sm md:text-base text-gray-400 max-w-xl mb-12 leading-relaxed font-light">
+          <p className="text-sm md:text-base text-white max-w-xl mb-12 leading-relaxed font-light">
             We build intelligent, secure, and scalable technology to help startups and enterprises grow.
           </p>
 
@@ -74,7 +74,7 @@ const Hero = () => {
                             `0${s.suffix}`
                           )}
                         </span>
-                        <span className="text-[9px] text-white/50 font-bold text-left leading-[1.2] uppercase tracking-widest max-w-[80px]">
+                        <span className="text-[9px] text-white/80 font-bold text-left leading-[1.2] uppercase tracking-widest max-w-[80px]">
                           {s.label}
                         </span>
                       </div>

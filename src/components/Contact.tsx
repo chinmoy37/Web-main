@@ -39,7 +39,7 @@ const Contact = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
           Let's Start a <br className="hidden md:block" /> <span className="text-[#00EAFF]">Conversation</span>
         </h1>
-        <p className="text-gray-200 font-light max-w-2xl leading-relaxed">
+        <p className="text-white font-light max-w-2xl leading-relaxed">
           Whether you have a project in mind or just want to explore possibilities — we'd love to hear from you. No sales pitch, just a genuine conversation.
         </p>
       </section>
@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="bg-[#0A121D] border border-white/10 rounded-lg p-8 h-fit">
             <div className="mb-8">
               <h2 className="text-xl font-bold text-white mb-2">Send us a message</h2>
-              <p className="text-sm text-gray-200">We typically respond within 2 business hours.</p>
+              <p className="text-sm text-white">We typically respond within 2 business hours.</p>
             </div>
 
             {submitted ? (
@@ -61,7 +61,7 @@ const Contact = () => {
                   <Send className="h-8 w-8 text-[#00EAFF]" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-                <p className="text-gray-200">We'll get back to you shortly.</p>
+                <p className="text-white">We'll get back to you shortly.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -95,7 +95,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-xs font-semibold text-white mb-2">Project Type</label>
                     <div className="relative">
-                      <select required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-gray-200 text-sm focus:border-[#00EAFF] focus:outline-none transition-colors appearance-none cursor-pointer">
+                      <select required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors appearance-none cursor-pointer">
                         <option value="" disabled selected>Select a type</option>
                         <option value="web">Web Development</option>
                         <option value="ai">AI & ML Solutions</option>
@@ -103,7 +103,7 @@ const Contact = () => {
                         <option value="cloud">Cloud & DevOps</option>
                         <option value="other">Other</option>
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-200 pointer-events-none" />
+                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-white pointer-events-none" />
                     </div>
                   </div>
                 </div>
@@ -111,13 +111,13 @@ const Contact = () => {
                 <div>
                   <label className="block text-xs font-semibold text-white mb-2">Project Budget</label>
                   <div className="relative">
-                    <select required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-gray-200 text-sm focus:border-[#00EAFF] focus:outline-none transition-colors appearance-none cursor-pointer">
+                    <select required className="w-full bg-transparent border border-white/10 rounded px-4 py-3 text-white text-sm focus:border-[#00EAFF] focus:outline-none transition-colors appearance-none cursor-pointer">
                       <option value="" disabled selected>Select a range</option>
                       <option value="10k-50k">$10k - $50k</option>
                       <option value="50k-100k">$50k - $100k</option>
                       <option value="100k+">$100k+</option>
                     </select>
-                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-200 pointer-events-none" />
+                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-white pointer-events-none" />
                   </div>
                 </div>
 
@@ -128,7 +128,7 @@ const Contact = () => {
 
                 <div className="flex items-start gap-3">
                   <input type="checkbox" required id="privacy" className="mt-1 accent-[#00EAFF]" />
-                  <label htmlFor="privacy" className="text-[10px] text-gray-400 leading-tight cursor-pointer">
+                  <label htmlFor="privacy" className="text-[10px] text-gray-200 leading-tight cursor-pointer">
                     I agree to RadianCore’s privacy policy. We will never share your data.
                   </label>
                 </div>
@@ -146,7 +146,7 @@ const Contact = () => {
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <Mail className="h-5 w-5 text-[#00EAFF] mb-4" />
               <h3 className="text-white font-bold text-sm mb-1">Email Us</h3>
-              <p className="text-gray-200 text-xs mb-1">hello@radiancore.com</p>
+              <p className="text-white text-xs mb-1">hello@radiancore.com</p>
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
@@ -155,16 +155,16 @@ const Contact = () => {
                 <h3 className="text-white font-bold text-sm">Follow Our Journey</h3>
               </div>
               <div className="flex gap-6">
-                <a href="https://linkedin.com/company/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">LinkedIn</a>
-                <a href="https://twitter.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">Twitter</a>
-                <a href="https://github.com/radiancore" className="text-gray-400 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
+                <a href="https://linkedin.com/company/radiancore" className="text-gray-200 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">LinkedIn</a>
+                <a href="https://twitter.com/radiancore" className="text-gray-200 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">Twitter</a>
+                <a href="https://github.com/radiancore" className="text-gray-200 hover:text-[#00EAFF] transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
               </div>
             </div>
 
             <div className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <Clock className="h-5 w-5 text-[#00EAFF] mb-4" />
               <h3 className="text-white font-bold text-sm mb-1">Working Hours</h3>
-              <p className="text-gray-200 text-xs">Mon - Fri: 9:00 AM - 6:00 PM (Local Time)</p>
+              <p className="text-white text-xs">Mon - Fri: 9:00 AM - 6:00 PM (Local Time)</p>
             </div>
 
             <div className="h-full bg-transparent border border-white/10 rounded-lg overflow-hidden min-h-[200px] relative">
@@ -197,8 +197,8 @@ const Contact = () => {
             <div key={office.city} className="bg-transparent border border-white/10 rounded-lg p-6 hover:border-[#00EAFF]/30 transition-colors">
               <MapPin className="h-4 w-4 text-[#00EAFF] mb-4" />
               <h3 className="text-white font-bold text-sm mb-2">{office.city}</h3>
-              <p className="text-gray-400 text-xs mb-1">{office.address}</p>
-              <p className="text-gray-400 text-xs mb-6">{office.tz}</p>
+              <p className="text-gray-200 text-xs mb-1">{office.address}</p>
+              <p className="text-gray-200 text-xs mb-6">{office.tz}</p>
               <p className="text-[#00EAFF] text-xs font-semibold">{office.phone}</p>
             </div>
           ))}
@@ -220,7 +220,7 @@ const Contact = () => {
               <AccordionTrigger className="text-left text-sm font-semibold text-white hover:no-underline hover:text-[#00EAFF]">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-400 text-sm font-light leading-relaxed pb-6">
+              <AccordionContent className="text-gray-200 text-sm font-light leading-relaxed pb-6">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

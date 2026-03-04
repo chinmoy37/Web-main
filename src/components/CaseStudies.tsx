@@ -107,7 +107,7 @@ const CaseStudies = () => {
           Our Work – <br />
           <span className="text-[#00EAFF]">Real Projects</span>, Real Impact
         </h1>
-        <p className="text-gray-200 font-light max-w-2xl mx-auto leading-relaxed text-lg">
+        <p className="text-white font-light max-w-2xl mx-auto leading-relaxed text-lg">
           Explore how we help businesses transform their digital landscape through AI, scale, and strategic innovation.
         </p>
       </div>
@@ -138,9 +138,9 @@ const CaseStudies = () => {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold text-white">{study.title}</h2>
-                  <p className="text-gray-400 text-sm">Client: {study.client}</p>
+                  <p className="text-gray-200 text-sm">Client: {study.client}</p>
                 </div>
-                <p className="text-gray-200 font-light leading-relaxed">
+                <p className="text-white font-light leading-relaxed">
                   {study.desc}
                 </p>
 
@@ -149,7 +149,7 @@ const CaseStudies = () => {
                   {study.metrics.map((metric) => (
                     <div key={metric.label} className="space-y-1">
                       <p className="text-2xl font-bold text-white">{metric.value}</p>
-                      <p className="text-[10px] text-gray-400 font-bold tracking-widest uppercase">{metric.label}</p>
+                      <p className="text-[10px] text-gray-200 font-bold tracking-widest uppercase">{metric.label}</p>
                     </div>
                   ))}
                 </div>
@@ -157,7 +157,7 @@ const CaseStudies = () => {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 pt-2">
                   {study.tags.map((tag) => (
-                    <span key={tag} className="text-[10px] px-2 py-1 rounded-sm bg-white/5 text-gray-400 font-mono tracking-tight leading-none h-fit border border-white/5">
+                    <span key={tag} className="text-[10px] px-2 py-1 rounded-sm bg-white/5 text-gray-200 font-mono tracking-tight leading-none h-fit border border-white/5">
                       {tag}
                     </span>
                   ))}
@@ -179,7 +179,7 @@ const CaseStudies = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
             <div key={t.author} className="bg-[#0A121D] border border-white/10 rounded-xl p-8 hover:border-[#00EAFF]/30 transition-all duration-300 group">
-              <p className="text-gray-200 font-light leading-relaxed mb-8 italic">
+              <p className="text-white font-light leading-relaxed mb-8 italic">
                 "{t.quote}"
               </p>
               <div className="space-y-1">

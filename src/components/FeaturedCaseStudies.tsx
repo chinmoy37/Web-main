@@ -25,7 +25,7 @@ const FeaturedCaseStudies = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                         Featured <span className="text-[#00EAFF]">Case Studies</span>
                     </h2>
-                    <p className="text-gray-400 font-light max-w-xl leading-relaxed">
+                    <p className="text-gray-200 font-light max-w-xl leading-relaxed">
                         Discover how we've helped companies across industries scale through mission-critical technology solutions.
                     </p>
                 </div>
@@ -48,7 +48,7 @@ const FeaturedCaseStudies = () => {
                                 <span className="text-[#00EAFF] text-[10px] font-bold tracking-[0.2em]">{p.industry}</span>
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#00EAFF] transition-colors">{p.title}</h3>
-                            <p className="text-sm text-gray-400 font-light leading-relaxed mb-6">
+                            <p className="text-sm text-gray-200 font-light leading-relaxed mb-6">
                                 {p.desc}
                             </p>
                             <Link href="/case-studies" className="inline-flex items-center gap-2 text-white text-[10px] font-bold uppercase tracking-widest hover:gap-3 transition-all">
