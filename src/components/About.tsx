@@ -46,6 +46,14 @@ const team = [
     bio: "Senior web engineer specializing in full-stack solutions.",
     linkedin: "#",
   },
+
+  {
+    name: "Al Rakib",
+    role: "FullStack Developer",
+    image: "/team/Borad.jpeg",
+    bio: "Web engineer specializing in full-stack solutions.",
+    linkedin: "#",
+  },
   {
     name: "Rakib Bhuiyan",
     role: "Data Engineer",
@@ -59,6 +67,14 @@ const team = [
     image: "/team/Bangi1.jpeg",
     objectPosition: "center",
     bio: "Designer focused on intuitive, human-centered interfaces.",
+    linkedin: "#",
+  },
+
+  {
+    name: "Thouhida Authoi",
+    role: "Head of Sales",
+    image: "/team/Thoudia.png",
+    bio: "Experienced in global tech Sales and marketing.",
     linkedin: "#",
   },
 
